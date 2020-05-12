@@ -1,3 +1,9 @@
+'''
+링크: https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV4yLUiKDUoDFAUx&categoryId=AV4yLUiKDUoDFAUx&categoryType=CODE&&&
+문제풀이방식: BFS를 stack을 사용하여
+
+'''
+
 def solution(map_, visit, test, r, c):
     dx = [-1, 0, 1, 0] # 밑 왼쪽 위 오른쪽
     dy = [0, -1, 0, 1]
@@ -21,7 +27,6 @@ def solution(map_, visit, test, r, c):
                 stack.append([(x + dx[2]) % r, (y + dy[2]) % c, 2, m])
             elif map_[x][y] == '@': # 정지할 수 있는 경우
                 return True
-            # +인경우 
             elif map_[x][y] == '+':
                 # d 방향으로 간다 / 마지막에 16나눠주는 이유는 15이상이면 0으로 가야하기때문에
                 stack.append([(x + dx[d]) % r, (y + dy[d]) % c, d, (m + 1)%16])
@@ -29,9 +34,11 @@ def solution(map_, visit, test, r, c):
                 stack.append([(x + dx[d]) % r, (y + dy[d]) % c, d, (m - 1)%16])
             elif map_[x][y] == '.':
                 stack.append([(x + dx[d]) % r, (y + dy[d]) % c, d, m])
+            # ?같은경우는 4방향이 전부 가능하다는 소리다. 그래서 4방향을 전부 스택에 추가해준다.
             elif map_[x][y] == '?':
                 for i in range(4):
                     stack.append([(x + dx[i]) % r, (y + dy[i]) % c, i, m])
+            # 숫자일 경우 저장하고 그대로 진행방향
             else:
                 stack.append([(x + dx[d]) % r, (y + dy[d]) % c, d, int(map_[x][y])])
     return False
