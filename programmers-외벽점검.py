@@ -1,3 +1,11 @@
+'''
+링크: https://programmers.co.kr/learn/courses/30/lessons/60062#
+풀이방법
+- 원을 직선으로 늘리고 반시계 방향은 리스트 뒤에 추가하는 식으로 변경한다.
+- permutation순열을 이용하여 모든 경우의 수를 계산한다.
+'''
+
+
 from itertools import permutations
 
 def solution(n, weak, dist):
