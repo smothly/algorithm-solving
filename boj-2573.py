@@ -3,7 +3,8 @@
 링크: https://www.acmicpc.net/problem/2573
 풀이방법
 - deque를 이용
-- bfs나 dfs는 완전 사고자체를 바꿔야 하네..
+- bfs나 dfs는 완전 사고를 바꿔야 함 - 방문 관리 맵, 큐로 모든 방향 탐색
+- bfs를 통해 빙산 개수 체크 + 녹여야 할 빙산 리턴
 '''
 
 from collections import deque
@@ -15,7 +16,6 @@ def bfs(x, y):
     # 첫번째 지점을 큐에 넣음
     queue = deque([(x, y)])
     visited[x][y] = True
-
     
     while queue:
         qx, qy = queue.popleft()
