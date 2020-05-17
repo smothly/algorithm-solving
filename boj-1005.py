@@ -43,7 +43,7 @@ for _ in range(T):
 
         # 다음 방문 order를 진입차수 줄이고 큐에 추가
         for i in order[p]:
-            # 진입차수 줄이고 
+            # 진입차수 줄이고
             inD[i] -= 1
             # 걸리는 시간 업데이트 dp
             DP[i] = max(DP[i], DP[p] + construction_time[p])

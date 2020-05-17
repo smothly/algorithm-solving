@@ -3,7 +3,6 @@ SWEA 1824번 혁진이의 프로그램 검증
 링크: https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV4yLUiKDUoDFAUx&categoryId=AV4yLUiKDUoDFAUx&categoryType=CODE&&&
 풀이방법
 - BFS를 stack을 사용하여 모든 방향을 순회한다..... 문제를 잘 읽어야 할 듯
-
 '''
 
 def solution(map_, visit, test, r, c):

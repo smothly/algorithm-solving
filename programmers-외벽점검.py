@@ -13,7 +13,7 @@ def solution(n, weak, dist):
     lenw = len(weak)
     lend = len(dist)
     
-    # weak을 늘려서 초기화 해주는 과정 [1 5, 6, 10] + [12, 17, 18, 22] 
+    # weak을 늘려서 초기화 해주는 과정 [1 5, 6, 10] + [13, 17, 18, 22] 
     for i in range(lenw):
         weak.append(weak[i]+n)
     
@@ -29,7 +29,6 @@ def solution(n, weak, dist):
             index, count = 0,1 # 시작 인덱스, 친구 수
             possible_check_len = new_list[0] + order[index] # 첫 친구가 체크할 수 있는 범위
             for i in range(lenw):
-                print(order, i, possible_check_len, count)
                 # 확인가능 최대 거리를 넘을 경우
                 if new_list[i] > possible_check_len:
                     # 다음 친구 투입
