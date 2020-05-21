@@ -2,7 +2,7 @@
 swea 4317번 칩 생산
 링크: https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWL21nCaM8wDFAUE
 풀이 방법
-- 
+- 흠...... 모르게땀..
 '''
 
 
