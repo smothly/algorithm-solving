@@ -5,7 +5,6 @@
 - 둘다 sort한 채로 a를 이길 수 있는 최소의 b를 찾으며 한번의 loop로 해결한다.
 '''
 
-
 def solution(A, B):
     answer = 0
     A.sort()

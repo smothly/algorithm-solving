@@ -5,7 +5,6 @@
 - 지는 결과들을 보고 이기는 결과를 추가하고, 반대로 이기는 결과를 보고 지는 결과를 추가한다.
 '''
 
-
 def solution(n, results):
     
     win = {x:set() for x in range(1, n+1)}

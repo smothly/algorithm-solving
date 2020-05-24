@@ -13,7 +13,7 @@ def solution(n, weak, dist):
     lenw = len(weak)
     lend = len(dist)
     
-    # weak을 늘려서 초기화 해주는 과정 [1 5, 6, 10] + [13, 17, 18, 22] 
+    # weak을 늘려서 초기화 해주는 과정 [1 5, 6, 10] + [13, 17, 18] 
     for i in range(lenw):
         weak.append(weak[i]+n)
     

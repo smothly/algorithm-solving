@@ -1,5 +1,5 @@
 '''
-링크: https://programmers.co.kr/learn/courses/30/lessons/43162
+링크: https://programmers.co.kr/learn/courses/30/lessons/43163
 풀이방법
 - BFS
 - 하나만 바뀌는 경우 단어들을 queue에 추가하여 bfs 돌린다.
