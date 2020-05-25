@@ -9,7 +9,7 @@
 import sys
 from collections import defaultdict
 
-# sys.stdin = open("input.txt", "r")
+sys.stdin = open("input.txt", "r")
 N, M = map(int, input().split())
 
 ind = [0 for _ in range(N+1)]
