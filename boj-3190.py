@@ -61,9 +61,3 @@ while True:
             else:
                 cur_dir = (cur_dir + 1) % 4
             dir_index += 1
-
-
-
-
-
-

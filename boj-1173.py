@@ -7,7 +7,7 @@
 import sys
 # sys.stdin = open("input.txt", "r")
 
-N, m, M, T, R=map(int, input().split())
+N, m, M, T, R = map(int, input().split())
 cnt = 0
 X = m
 # 운동 할 수 없는 경우
