@@ -47,7 +47,7 @@ def bfs(x, y):
     print(time, count)
 
 import sys
-# sys.stdin = open("input.txt", "r")
+sys.stdin = open("input.txt", "r")
 
 # 입력
 N, M = map(int, input().split())
