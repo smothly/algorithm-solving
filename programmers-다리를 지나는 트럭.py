@@ -2,13 +2,13 @@
 링크: https://programmers.co.kr/learn/courses/30/lessons/42583
 풀이방법
 - queue로 bridge를 선언한다.
-- queue에 
-- edge들을 크루스칼 알고리즘으로 Minimum Spanning Tree를 찾는다.
+- bridge에 트럭이 지나갈 수 있으면 트럭무게를 없으면 0을 추가한다.
+- 남은 트럭이 없으면 bridge에 트럭이 없도록 남은 시간을 계산해준다.
 '''
 
 def solution(bridge_length, weight, truck_weights):
     time = 0
-    bridge = [0] * bridge_length # 다리 
+    bridge = [0] * bridge_length # 다리 큐
     current_weight = 0 # 다리 현재 무게
     
     # 트럭들 전부 보내기
