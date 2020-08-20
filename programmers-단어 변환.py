@@ -41,3 +41,4 @@ def solution(begin, target, words):
             queue = temp # 바꿀 수 있는 단어들을 추가
             
     return 0
+

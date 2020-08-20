@@ -50,3 +50,6 @@ for _ in range(T):
             if inD[i] == 0:
                 queue.append(i)
     print(DP[dest] + construction_time[dest])
+
+
+    
