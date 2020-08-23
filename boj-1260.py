@@ -33,7 +33,7 @@ def bfs(v):
 
 
 from sys import stdin
-stdin = open("input.txt", "r")
+# stdin = open("input.txt", "r")
 
 # N: 정점의 개수
 # M: 간선의 개수
