@@ -3,9 +3,9 @@
 백준 2667번 단지 번호 붙이기
 링크: https://www.acmicpc.net/problem/2667
 풀이방법
-- DFS
+- BFS
+- 방문 체크와 맵 이탈 여부 등만 잘 체크 해주면 된다.
 '''
-
 
 from sys import stdin
 from collections import deque
@@ -52,7 +52,7 @@ for i in range(N):
     for j in range(N):
         if MAP[i][j] == 1 and not visited[i][j]:
             apart.append(bfs(i, j))
-            
+
 # 오름차순 정렬
 apart.sort()
 # 아파트 개수 출력
