@@ -28,8 +28,7 @@ start, end, cur_sum, answer = 0, 0, 0, 0
 length = len(prime_list)
 
 while True:
-    print(prime_list[start:end])
-
+    
     # 현재합이 N보다 커지면 왼쪽 포인터만 이동
     if N <= cur_sum:
         cur_sum -= prime_list[start]
@@ -46,7 +45,6 @@ while True:
     
     # 숫자와 같을경우 정답 카운트
     if N == cur_sum:
-        print("같습니다!")
         answer += 1
 
 print(answer)
