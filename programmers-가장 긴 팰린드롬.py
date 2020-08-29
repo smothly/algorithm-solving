@@ -26,12 +26,15 @@ def solution(s):
     if len(s) < 2 or s == s[::-1]:
         return len(s)
     
-    # 역순으로 진행 
-    # 홀수 / 짝수 두가지로 진행된다.
+    
     result = ""
+    # i가 기준점이다.
     for i in range(len(s)-1):
+        
         # print(i, palindrome(s, i, i+1), palindrome(s, i, i+2))
+        
         # 길이 기준으로 result update
+        # 홀수 / 짝수 두가지로 진행된다.
         result = max(result, palindrome(s, i, i+1), palindrome(s, i, i+2), key = len)
     
     return len(result)
