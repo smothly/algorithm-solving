@@ -4,7 +4,7 @@
 풀이방법
 - BFS
 - heapq를 사용
-- 조건을 잘 따져야 하는 문제앋.
+- 조건을 잘 따져야 하는 문제이다.
 - 출처: https://rebas.kr/714
 '''
 
@@ -41,7 +41,6 @@ def bfs(distance, x, y):
             distance = 0
             # 나머지 큐들 초기화
             while queue:
-                print("초기화")
                 queue.pop()
             # 방문 배열 초기화
             visited = [[False] * N for _ in range(N)]
