@@ -16,8 +16,8 @@ def dijkstra(start, end):
     heap = []
     heappush(heap, (0, start))  # 시작지점 힙에 추가
     distance = [float('inf')] * (N + 1)  # 각 정점사이의 거리 무한대로 초기화
-    distance[start] = 0  # 시작 지점 0으로 초기화
-
+    distance[start] = 0  # 시작 지점 0으로 초기화   
+    print(edges)
     while heap:
         cost, index = heappop(heap)
         if(distance[index] < cost) : continue # 검사할 필요 없음
