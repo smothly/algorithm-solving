@@ -6,10 +6,7 @@
 
 '''
 
-# a+b -> ab+
-# a+b*c => (a+(b*c)) => 
 # 중위 표기식을 후위 표기식으로 변환
-
 
 
 # 알파벳 대문자와 +, -, *, /, (, ) 로만 이루어짐
@@ -22,13 +19,12 @@ stack = deque()
 
 operator = ['+', '-', '*', '/']
 
-# A+(B*C)-(D/E) -> ABC*+DE/-
 priority = {
     "*": 2, "/": 2,
     "+": 1, "-": 1,
     "(": 0
 }
-# 중위 표현식 
+# 중위 표현식 입력
 infix = stdin.readline().strip()
 
 answer = ""
@@ -51,8 +47,9 @@ for char in infix:
     else:
         answer += char
 
+# 나머지 팝
 while stack:
     answer += stack.pop()
-# answer += "".join(stack)
+
 print(answer)
 
