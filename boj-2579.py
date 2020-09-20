@@ -11,6 +11,17 @@ stdin = open("input.txt", "r")
 N = int(stdin.readline())
 
 stairs = [int(stdin.readline()) for _ in range(N)]
-stairs.insert(0, 0)
 
-for i in stairs[]
+if N <= 2:
+    print(sum(stairs))
+
+else:
+    DP = []
+    DP.append(stairs[0]) # 첫번째 계단
+    DP.append(stairs[0] + stairs[1]) # 두번째 계단 까지의 최댓값
+    DP.append(max(stairs[2] + stairs[1], stairs[2] + stairs[0])) #세번째 계단은 1, 2 or 0, 2 두가지 경우로 이루어질 수 있음.
+
+    for i in range(3, N):
+        # print(DP)
+        DP.append(stairs[i] + max(DP[i-2], stairs[i-1] + DP[i-3]))
+    print(DP[-1])
