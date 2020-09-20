@@ -28,4 +28,4 @@ for i in range(N):
         queue.pop()
 
     queue.append((i, numbers[i]))
-    print(queue[0][1], end=' ')
+    print(queue[0][1], end=' ') # 큐에 최소값 출력
