@@ -2,7 +2,7 @@
 백준 2579번 계단 오르기
 링크: https://www.acmicpc.net/problem/2579
 풀이방법
-- 
+- 다이나믹 프로그래밍
 '''
 
 from sys import stdin
