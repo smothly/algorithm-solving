@@ -19,7 +19,7 @@ else:
     DP = []
     DP.append(stairs[0]) # 첫번째 계단
     DP.append(stairs[0] + stairs[1]) # 두번째 계단 까지의 최댓값
-    DP.append(max(stairs[2] + stairs[1], stairs[2] + stairs[0])) #세번째 계단은 1, 2 or 0, 2 두가지 경우로 이루어질 수 있음.
+    DP.append(max(stairs[2] + stairs[1], stairs[2] + stairs[0])) # 세번째 계단은 1, 2 or 0, 2 두가지 경우로 이루어질 수 있음.
 
     for i in range(3, N):
         # print(DP)
