@@ -1,3 +1,10 @@
+'''
+프로그래머스 큰 수 만들기
+링크: https://programmers.co.kr/learn/courses/30/lessons/42883
+풀이방법
+- stack
+'''
+
 def solution(number, k):
     stack = [number[0]]
     for num in number[1:]:
